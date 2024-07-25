@@ -6,6 +6,10 @@ const routes = [
     {
         name: "Sticky footer",
         slug: "sticky-footer",
+    },
+    {
+        name: "Zoom parallax",
+        slug: "zoom-parallax",
     }
 ]
 
