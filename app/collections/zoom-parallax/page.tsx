@@ -9,10 +9,7 @@ import img6 from "../../../assets/zoom-parallax/picture-6.jpg";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
-import {
-  ArrowDownCircleIcon,
-  ArrowDownIcon,
-} from "@heroicons/react/24/outline";
+import { ArrowDownIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
   const container = useRef<HTMLDivElement>(null);
@@ -41,7 +38,7 @@ export default function Page() {
   }, []);
 
   return (
-    <main>
+    <main className="text-white">
       <div className="bg-zinc-950 h-screen grid place-items-center">
         <h1 className="text-4xl font-medium">Example of a zoom parallax</h1>
         <div className="flex items-center flex-col gap-10">

@@ -36,14 +36,14 @@ export default function Home() {
 
   return (
     <>
-      <main>
+      <main className="text-white">
         <div className="bg-zinc-950 h-screen grid place-items-center">
           <h1 className="text-4xl font-medium">Example of a sticky footer</h1>
         </div>
       </main>
       {/* Only downside is we need to have a specific height */}
       <footer
-        className="relative h-[500px] w-full"
+        className="relative h-[500px] w-full text-white"
         style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
       >
         <div className="relative h-[calc(100vh+500px)] -top-[100vh]">
