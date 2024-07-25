@@ -26,8 +26,34 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Zoom parallax with CSS */
+
+@property --s{
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 0;
+}
+
+.scrollable-container{
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: contain 0% contain 100%;
+  animation-fill-mode: forwards;
+}
+
+.image-container{
+  transform: scale(calc(1 + ((var(--s) * var(--sn)) / 1000)));
+}
+
+@keyframes scroll {
+  to {
+    --s: 1000
   }
 }

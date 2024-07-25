@@ -10,6 +10,10 @@ const routes = [
     {
         name: "Zoom parallax",
         slug: "zoom-parallax",
+    },
+    {
+        name: "Zoom parallax with CSS",
+        slug: "zoom-parallax-with-css",
     }
 ]
 
